@@ -1,6 +1,7 @@
 docker run -it \
---name vuetest3 \
+--rm \
+--name frontend_server \
 --platform=linux/amd64 \
--p 8003:8003 \
---mount type=bind,source="$(pwd)"/simple-vue-tensorflow,target=/workspace2 \
-vueworked:latest
+-p 8000:8000 \
+--mount type=bind,source="$(pwd)"/simple-vue-tensorflow,target=/workspace/flwebapp \
+flwebapp:0.0.1
