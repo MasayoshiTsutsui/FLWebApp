@@ -5,7 +5,7 @@
   "author": "Masayoshi Tsutsui",
   "private": true,
   "scripts": {
-    "dev": "HOST=0.0.0.0 PORT=8000 nuxt",
+    "dev": "HOST=127.0.0.1 PORT=8000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^4.0.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
